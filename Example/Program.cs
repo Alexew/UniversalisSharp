@@ -8,7 +8,7 @@ namespace Example
 		{
 			var client = new UniversalisClient();
 
-			var items = client.Market.GetItemsData("Chaos", new int[] { 37775, 37776 }, hq: true).Result;
+			var items = client.Market.GetItemsDataAsync("Chaos", new int[] { 37775, 37776 }, hq: true).Result;
 		}
 	}
 }

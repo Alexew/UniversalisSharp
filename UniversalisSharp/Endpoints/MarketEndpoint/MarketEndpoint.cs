@@ -14,7 +14,7 @@ namespace UniversalisSharp.Endpoints.MarketEndpoint
 			_requester = requester;
 		}
 
-		public async Task<IList<Item>> GetItemsData(string worldDcRegion, int[] itemIds,
+		public async Task<IList<Item>> GetItemsDataAsync(string worldDcRegion, int[] itemIds,
 			int? listings = null, int? entries = null, bool? noGst = null, bool? hq = null)
 		{
 			var parameters = CreateDataRequestParametersList(listings, entries, noGst, hq);

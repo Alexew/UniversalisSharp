@@ -5,7 +5,9 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniversalisSharp", "UniversalisSharp\UniversalisSharp.csproj", "{0BB446F5-E90E-46B7-8FEC-4D687B8BAB60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "Example\Example.csproj", "{46D734B1-C368-497D-8AF1-BC5F19AA85DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example", "Example\Example.csproj", "{46D734B1-C368-497D-8AF1-BC5F19AA85DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversalisSharp.Test", "UniversalisSharp.Test\UniversalisSharp.Test.csproj", "{3C450304-434B-4774-843D-F639721B00F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{46D734B1-C368-497D-8AF1-BC5F19AA85DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46D734B1-C368-497D-8AF1-BC5F19AA85DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46D734B1-C368-497D-8AF1-BC5F19AA85DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C450304-434B-4774-843D-F639721B00F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C450304-434B-4774-843D-F639721B00F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C450304-434B-4774-843D-F639721B00F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C450304-434B-4774-843D-F639721B00F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

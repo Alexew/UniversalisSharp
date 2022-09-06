@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace UniversalisSharp.Endpoints.MarketEndpoint
+namespace UniversalisSharp.Endpoints.MarketEndpoint.Models
 {
 	public class Item
 	{

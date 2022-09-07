@@ -2,9 +2,9 @@
 
 namespace UniversalisSharp.Endpoints.MarketEndpoint.Models
 {
-	public class LeastRecentlyUpdatedResponse
+	public class RecentlyUpdatedResponse
 	{
-		public LeastRecentlyUpdatedResponse()
+		public RecentlyUpdatedResponse()
 		{
 			Items = new List<RecentlyItem>();
 		}

@@ -13,7 +13,7 @@ namespace UniversalisSharp.Http
 			_restClient = new RestClient(Url);
 		}
 
-		public async Task<string?> SendRequestAsync(string url, IDictionary<string, string> parameters, Method method = Method.Get)
+		public async Task<string?> SendRequestAsync(string url, IDictionary<string, string>? parameters = null, Method method = Method.Get)
 		{
 			var request = PrepareRequest(url, parameters, method);
 			var response = await _restClient.ExecuteAsync(request);
@@ -21,13 +21,16 @@ namespace UniversalisSharp.Http
 			return ProcessResponse(response);
 		}
 
-		private RestRequest PrepareRequest(string url, IDictionary<string, string> parameters, Method method = Method.Get)
+		private RestRequest PrepareRequest(string url, IDictionary<string, string>? parameters = null, Method method = Method.Get)
 		{
 			var request = new RestRequest(url, method);
 
-			foreach (var parameter in parameters)
+			if (parameters != null)
 			{
-				request.AddQueryParameter(parameter.Key, parameter.Value);
+				foreach (var parameter in parameters)
+				{
+					request.AddQueryParameter(parameter.Key, parameter.Value);
+				}
 			}
 
 			return request;

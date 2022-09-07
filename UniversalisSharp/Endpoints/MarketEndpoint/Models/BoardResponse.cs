@@ -2,7 +2,7 @@
 
 namespace UniversalisSharp.Endpoints.MarketEndpoint.Models
 {
-	internal class BoardResponse
+	public class BoardResponse
 	{
 		public BoardResponse()
 		{

@@ -10,6 +10,7 @@ namespace UniversalisSharp.Test
 	{
 		public readonly UniversalisClient client;
 
+		public const string World = "Spriggan";
 		public const string DataCenter = "Chaos";
 		public const int ItemId = 37775;
 		public const int ItemId2 = 37776;

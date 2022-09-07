@@ -23,6 +23,12 @@ namespace UniversalisSharp.Endpoints.MarketEndpoint.Models
 		[JsonProperty("worldName")]
 		public string? WorldName { get; set; }
 
+		[JsonProperty("dcName")]
+		public string? DcName { get; set; }
+
+		[JsonProperty("regionName")]
+		public string? RegionName { get; set; }
+
 		[JsonProperty("lastUploadTime")]
 		public long LastUploadTime { get; set; }
 
@@ -39,9 +45,6 @@ namespace UniversalisSharp.Endpoints.MarketEndpoint.Models
 
 		[JsonProperty("recentHistory")]
 		public IList<RecentHistory> RecentHistory { get; set; }
-
-		[JsonProperty("dcName")]
-		public string? DcName { get; set; }
 
 		[JsonProperty("currentAveragePrice")]
 		public double CurrentAveragePrice { get; set; }

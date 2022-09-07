@@ -7,7 +7,7 @@ namespace UniversalisSharp.Endpoints.MarketEndpoint
 	public class MarketEndpoint : IMarketEndpoint
 	{
 		private const string DataUrl = "/api/v2/{0}/{1}";
-		private const string LeastRecentlyUpdated = "/api/v2/extra/stats/least-recently-updated";
+		private const string LeastRecentlyUpdatedUrl = "/api/v2/extra/stats/least-recently-updated";
 
 		private readonly IRequester _requester;
 
@@ -56,7 +56,7 @@ namespace UniversalisSharp.Endpoints.MarketEndpoint
 		public async Task<IList<RecentlyItem>> GetLeastRecentlyUpdatedItemsAsync(string? world = null, string? dcName = null, int? entries = null)
 		{
 			var parameters = CreateLeastRecentlyUpdatedRequestParametersList(world, dcName, entries);
-			var json = await _requester.SendRequestAsync(LeastRecentlyUpdated, parameters);
+			var json = await _requester.SendRequestAsync(LeastRecentlyUpdatedUrl, parameters);
 			if (json == null)
 				return new List<RecentlyItem>();
 

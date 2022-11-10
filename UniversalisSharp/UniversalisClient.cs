@@ -1,4 +1,5 @@
-﻿using UniversalisSharp.Endpoints.MarketEndpoint;
+﻿using UniversalisSharp.Endpoints.InfoEndpoint;
+using UniversalisSharp.Endpoints.MarketEndpoint;
 using UniversalisSharp.Http;
 
 namespace UniversalisSharp
@@ -9,9 +10,11 @@ namespace UniversalisSharp
 		{
 			var requester = new Requester();
 
+			Info = new InfoEndpoint(requester);
 			Market = new MarketEndpoint(requester);
 		}
 
+		public IInfoEndpoint Info { get; }
 		public IMarketEndpoint Market { get; }
 	}
 }
